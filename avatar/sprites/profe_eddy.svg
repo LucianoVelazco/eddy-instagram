@@ -1,0 +1,53 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 720' width='600' height='720'>
+  <!-- camisa y corbata -->
+  <path d='M228 512 L300 650 L372 512 Z' fill='#FFFFFF'/>
+  <path d='M291 572 L309 572 L318 600 L300 700 L282 600 Z' fill='#58B389'/>
+  <path d='M286 556 L314 556 L309 574 L291 574 Z' fill='#479571'/>
+  <!-- suéter -->
+  <path d='M30 720 C34 612 116 548 226 512 L300 652 L374 512 C484 548 566 612 570 720 Z' fill='#2F68B0'/>
+  <path d='M226 512 L300 652 L374 512 L362 508 L300 624 L238 508 Z' fill='#275794'/>
+  <!-- cuello de camisa -->
+  <path d='M236 506 L300 566 L262 596 L222 530 Z' fill='#FFFFFF' stroke='#E2E8F0' stroke-width='3'/>
+  <path d='M364 506 L300 566 L338 596 L378 530 Z' fill='#FFFFFF' stroke='#E2E8F0' stroke-width='3'/>
+  <!-- pin verde -->
+  <circle cx='452' cy='612' r='18' fill='#58B389'/>
+  <circle cx='452' cy='612' r='8' fill='#FFFFFF'/>
+  <!-- cuello -->
+  <rect x='252' y='420' width='96' height='110' rx='34' fill='#C68B59'/>
+  <path d='M252 460 Q300 498 348 460 L348 440 L252 440 Z' fill='#A86F43' opacity='0.55'/>
+  <!-- orejas -->
+  <ellipse cx='157' cy='318' rx='24' ry='36' fill='#C68B59'/>
+  <ellipse cx='443' cy='318' rx='24' ry='36' fill='#C68B59'/>
+  <ellipse cx='160' cy='320' rx='10' ry='18' fill='#A86F43' opacity='0.5'/>
+  <ellipse cx='440' cy='320' rx='10' ry='18' fill='#A86F43' opacity='0.5'/>
+  <!-- lápiz detrás de la oreja -->
+  <g transform='rotate(38 455 245)'>
+    <rect x='430' y='160' width='26' height='120' rx='4' fill='#F0A04B'/>
+    <rect x='430' y='160' width='26' height='18' rx='4' fill='#E2E8F0'/>
+    <path d='M430 280 L456 280 L443 312 Z' fill='#F6D7A7'/>
+    <path d='M438 300 L448 300 L443 312 Z' fill='#1F2937'/>
+  </g>
+  <!-- cabeza -->
+  <ellipse cx='300' cy='296' rx='146' ry='164' fill='#C68B59'/>
+  <!-- cabello -->
+  <path d='M150 290 C138 168 218 108 306 106 C404 106 466 170 450 292 C440 236 418 206 386 192 C346 222 270 232 214 214 C186 232 162 258 150 290 Z' fill='#2B2118'/>
+  <path d='M214 214 C262 196 312 168 344 134 C330 176 300 206 262 222 Z' fill='#3A2C20'/>
+  <!-- cejas -->
+  <rect x='206' y='248' width='62' height='12' rx='6' fill='#2B2118' transform='rotate(-6 237 254)'/>
+  <rect x='332' y='248' width='62' height='12' rx='6' fill='#2B2118' transform='rotate(6 363 254)'/>
+  <!-- mejillas -->
+  <circle cx='212' cy='372' r='24' fill='#E07A5F' opacity='0.22'/>
+  <circle cx='388' cy='372' r='24' fill='#E07A5F' opacity='0.22'/>
+  <!-- ojos -->
+  <circle cx='235' cy='305' r='14' fill='#1F2937'/><circle cx='365' cy='305' r='14' fill='#1F2937'/><circle cx='240' cy='299' r='4.5' fill='#FFFFFF'/><circle cx='370' cy='299' r='4.5' fill='#FFFFFF'/>
+  <!-- lentes -->
+  <rect x='183' y='266' width='104' height='80' rx='28' fill='#FFFFFF' fill-opacity='0.12' stroke='#1F2937' stroke-width='7'/>
+  <rect x='313' y='266' width='104' height='80' rx='28' fill='#FFFFFF' fill-opacity='0.12' stroke='#1F2937' stroke-width='7'/>
+  <path d='M287 298 Q300 286 313 298' stroke='#1F2937' stroke-width='7' fill='none'/>
+  <path d='M183 296 L162 290' stroke='#1F2937' stroke-width='7' stroke-linecap='round'/>
+  <path d='M417 296 L438 290' stroke='#1F2937' stroke-width='7' stroke-linecap='round'/>
+  <!-- nariz -->
+  <path d='M302 318 Q288 356 298 366 Q308 372 318 362' stroke='#A86F43' stroke-width='6' fill='none' stroke-linecap='round'/>
+  <!-- boca -->
+  <path d='M262 402 Q300 430 338 402' stroke='#5B2A1E' stroke-width='8' fill='none' stroke-linecap='round'/>
+</svg>
