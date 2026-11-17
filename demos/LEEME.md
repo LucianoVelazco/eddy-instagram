@@ -1,22 +1,26 @@
-# Grabaciones de demo
+# Demos de los reels: animaciones o grabaciones
 
-Aquí van las grabaciones reales de Eddy funcionando. Son la prueba de cada bondad: el pipeline las
-monta dentro de los reels, con el Profe Eddy y los subtítulos.
+Cada reel tiene una escena que muestra la bondad de Eddy. Hay dos formas de llenarla, y se elige en la
+columna `demo` de `calendario/calendario.csv`:
 
-**Reglas:** formato MP4, de 10 a 25 segundos, horizontal (pantalla de compu) o vertical (celular).
-Usa una cuenta de prueba con datos de alumnos **ficticios**: nunca nombres ni notas reales.
-Si falta una grabación, el reel se genera igual con una tarjeta de texto y el PR te avisa.
+1. **Animación generada (por defecto, no hay que grabar nada).** Se escribe `anim:<nombre>`.
+   Son ilustraciones con la marca de Eddy que se arman solas al generar el reel.
+2. **Grabación real de la plataforma (opcional).** Sube un MP4 a esta carpeta y escribe su ruta,
+   por ejemplo `demos/manuscrito.mp4`. Usa una cuenta con datos de alumnos **ficticios**.
 
-| Archivo | Qué debe verse | Lo usan |
+| Animación | Qué muestra | La usan |
 | --- | --- | --- |
-| `ahorro-lote.mp4` | Subir un lote de exámenes, Eddy corrigiendo y la lista de resultados | s1-23nov-reel, s4-19dic-reel |
-| `manuscrito.mp4` | Foto con el celular a un examen escrito a mano → respuestas leídas y corregidas (a partir del segundo 8, el resultado) | s1-27nov-reel |
-| `ajustar-nota.mp4` | Abrir un resultado preliminar y cambiar una nota a mano | s2-30nov-reel |
-| `semantico.mp4` | Dos respuestas con palabras distintas y la misma idea, ambas marcadas como correctas | s2-04dic-reel |
-| `estadisticas.mp4` | Resultados por estudiante y estadísticas de un grupo | s3-07dic-reel |
-| `deteccion-ia.mp4` | Un ensayo con su indicador de porcentaje hecho con IA | s3-11dic-reel |
-| `rubrica-equipo.mp4` | La misma rúbrica aplicada a exámenes de dos secciones | s4-14dic-reel |
-| `diapositivas.mp4` | Escribir un tema y obtener el set de diapositivas | s4-18dic-reel |
+| `anim:lote` | Un lote de exámenes entra a Eddy y sale corregido, uno por uno | s1-23nov-reel, s4-19dic-reel |
+| `anim:manuscrito` | Foto de un examen escrito a mano, lectura y resultado preliminar | s1-27nov-reel |
+| `anim:ajustar-nota` | El docente cambia una nota del resultado preliminar | s2-30nov-reel |
+| `anim:semantico` | Dos respuestas con distintas palabras y la misma idea: ambas correctas | s2-04dic-reel |
+| `anim:estadisticas` | Aciertos por pregunta del grupo; la pregunta débil resalta | s3-07dic-reel |
+| `anim:deteccion-ia` | Un ensayo con partes marcadas y el porcentaje que parece hecho con IA | s3-11dic-reel |
+| `anim:rubrica-equipo` | La misma rúbrica se aplica a dos secciones | s4-14dic-reel |
+| `anim:diapositivas` | Se escribe un tema y aparecen las diapositivas | s4-18dic-reel |
 
-Para grabar gratis: en Windows, `Win + Alt + R` (Xbox Game Bar) o OBS Studio; en Mac, `Cmd + Shift + 5`;
+Las animaciones son ilustraciones, no capturas de pantalla: los nombres, notas y porcentajes que
+aparecen son de ejemplo. Una grabación real de vez en cuando suma credibilidad.
+
+Para grabar gratis: en Windows, `Win + Alt + R` (Xbox Game Bar) u OBS Studio; en Mac, `Cmd + Shift + 5`;
 en el celular, la grabación de pantalla del propio teléfono.
