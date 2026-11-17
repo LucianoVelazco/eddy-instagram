@@ -1,0 +1,81 @@
+name: 1 · Generar piezas
+
+# Cada miércoles genera las piezas de la semana siguiente y abre un Pull Request para aprobarlas.
+on:
+  schedule:
+    - cron: "17 14 * * 3"   # miércoles 9:17 a. m. (hora de Lima)
+  workflow_dispatch:
+    inputs:
+      desde:
+        description: "Desde (AAAA-MM-DD). Vacío = la próxima semana"
+        required: false
+      dias:
+        description: "Cuántos días desde esa fecha"
+        required: false
+        default: "7"
+      ids:
+        description: "Solo estos ids, separados por coma (opcional)"
+        required: false
+      forzar:
+        description: "Volver a generar aunque ya estén aprobadas"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: generar
+  cancel-in-progress: false
+
+jobs:
+  generar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar ffmpeg y dependencias
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg libcairo2
+          pip install -r requirements.txt
+
+      - name: Generar piezas
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          EDDY_VOZ: ${{ vars.EDDY_VOZ }}
+          IN_DESDE: ${{ inputs.desde }}
+          IN_DIAS: ${{ inputs.dias }}
+          IN_IDS: ${{ inputs.ids }}
+          IN_FORZAR: ${{ inputs.forzar }}
+        run: |
+          RAMA="piezas/$(TZ=America/Lima date +%Y%m%d-%H%M)"
+          echo "RAMA=$RAMA" >> "$GITHUB_ENV"
+          ARGS=(--rama "$RAMA")
+          if [ -n "$IN_IDS" ]; then ARGS+=(--ids "$IN_IDS")
+          elif [ -n "$IN_DESDE" ]; then ARGS+=(--desde "$IN_DESDE" --dias "${IN_DIAS:-7}")
+          else ARGS+=(--proxima-semana); fi
+          if [ "$IN_FORZAR" = "true" ]; then ARGS+=(--forzar); fi
+          python -m pipeline.generar "${ARGS[@]}"
+
+      - name: Abrir Pull Request para aprobar
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then echo "No hay piezas nuevas."; exit 0; fi
+          git config user.name "eddy-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$RAMA"
+          git add -A
+          git commit -q -m "Piezas para aprobar ($RAMA)"
+          git push -q origin "$RAMA"
+          gh pr create --base main --head "$RAMA" \
+            --title "Piezas para aprobar · $(TZ=America/Lima date +%d/%m)" \
+            --body-file revision/RESUMEN.md
