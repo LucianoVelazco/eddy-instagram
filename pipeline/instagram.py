@@ -1,7 +1,8 @@
-"""Cliente mínimo de la API de Instagram (Instagram API con inicio de sesión de Instagram).
+"""Cliente mínimo de la API de Instagram (Graph API de Meta).
 
-Gratis para publicar en tu propia cuenta: la app de Meta puede quedarse en modo desarrollo,
-sin App Review, si tu cuenta de Instagram tiene un rol en la app (Instagram Tester / admin).
+Usa un token de "usuario del sistema" del portfolio comercial Eddy IA: no vence y sirve para
+publicar en la cuenta propia sin App Review (la app de Meta puede quedarse en modo desarrollo).
+IG_USER_ID es el identificador de la cuenta profesional de Instagram (empieza con 1784...).
 """
 from __future__ import annotations
 
@@ -19,8 +20,9 @@ class Instagram:
     def __init__(self, user_id: str | None = None, token: str | None = None):
         self.user_id = user_id or os.environ["IG_USER_ID"]
         self.token = token or os.environ["IG_ACCESS_TOKEN"]
-        version = os.environ.get("IG_API_VERSION", "").strip()
-        self.base = "https://graph.instagram.com" + (f"/{version}" if version else "")
+        version = (os.environ.get("IG_API_VERSION") or "").strip()
+        host = (os.environ.get("IG_API_HOST") or "https://graph.facebook.com").rstrip("/")
+        self.base = host + (f"/{version}" if version else "")
 
     def _req(self, metodo: str, ruta: str, **params):
         params["access_token"] = self.token
@@ -98,10 +100,9 @@ class Instagram:
                     out[n] = None
             return out
 
-    def renovar_token(self) -> dict:
-        r = requests.get("https://graph.instagram.com/refresh_access_token",
-                         params={"grant_type": "ig_refresh_token", "access_token": self.token}, timeout=60)
-        datos = r.json()
-        if r.status_code >= 400 or "access_token" not in datos:
-            raise ErrorInstagram(f"No se pudo renovar el token: {datos}")
-        return datos
+    def cuenta(self) -> dict:
+        """Datos básicos de la cuenta: sirve para comprobar que el token y el ID funcionan."""
+        return self._req("GET", self.user_id, fields="username,name,followers_count,media_count")
+
+    def limite(self) -> dict:
+        return self._req("GET", f"{self.user_id}/content_publishing_limit", fields="config,quota_usage")

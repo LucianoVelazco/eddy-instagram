@@ -1,26 +1,27 @@
-"""Renueva el token de Instagram (dura 60 días) y lo guarda en los secretos del repositorio.
+"""Comprueba la conexión con Instagram: que el token y el ID de la cuenta funcionen.
 
-Requiere el secreto GH_PAT: un token personal de GitHub (fine-grained) con permiso
-"Secrets: Read and write" sobre este repositorio. Sin GH_PAT solo verifica que el token siga vivo.
+El token de usuario del sistema del portfolio Eddy IA no vence, así que no hay que renovarlo.
+Si alguna vez se revoca, genera otro en business.facebook.com → Usuarios del sistema → Eddy Bot.
 """
 from __future__ import annotations
 
-import os
-import subprocess
-
-from .instagram import Instagram
+from .instagram import ErrorInstagram, Instagram
 
 
 def main():
-    datos = Instagram().renovar_token()
-    dias = int(datos.get("expires_in", 0)) // 86400
-    if os.environ.get("GH_PAT") and os.environ.get("GITHUB_REPOSITORY"):
-        subprocess.run(["gh", "secret", "set", "IG_ACCESS_TOKEN", "--repo", os.environ["GITHUB_REPOSITORY"]],
-                       input=datos["access_token"], text=True, check=True,
-                       env={**os.environ, "GH_TOKEN": os.environ["GH_PAT"]})
-        print(f"Token renovado y guardado en el secreto IG_ACCESS_TOKEN (vence en {dias} días).")
-    else:
-        print(f"El token sigue activo (vence en {dias} días). Agrega el secreto GH_PAT para renovarlo solo.")
+    ig = Instagram()
+    try:
+        c = ig.cuenta()
+    except ErrorInstagram as e:
+        raise SystemExit(f"✗ No se pudo conectar con Instagram: {e}")
+    print(f"✓ Conectado a @{c.get('username')} ({c.get('name', '')}): "
+          f"{c.get('followers_count', '?')} seguidores, {c.get('media_count', '?')} publicaciones.")
+    try:
+        lim = ig.limite()["data"][0]
+        print(f"  Publicaciones por API en las últimas 24 h: {lim.get('quota_usage')} de "
+              f"{lim.get('config', {}).get('quota_total', '?')}.")
+    except (ErrorInstagram, KeyError, IndexError) as e:
+        print(f"  (No se pudo leer el límite de publicación: {e})")
 
 
 if __name__ == "__main__":
