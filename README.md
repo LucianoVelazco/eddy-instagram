@@ -21,7 +21,7 @@ Miércoles 9:17          Tú (5-10 min)            Cada hora                  Lu
 | Voz del Profe Eddy | edge-tts, voces neuronales `es-PE-AlexNeural` / `es-PE-CamilaNeural` | Gratis |
 | Personaje, montaje de video, carruseles | Código propio (Pillow + ffmpeg) | Gratis |
 | Guiones de meses siguientes (opcional) | API de Gemini, nivel gratuito de Google AI Studio | Gratis |
-| Publicar y leer métricas | API oficial de Instagram, app de Meta en modo desarrollo | Gratis |
+| Publicar y leer métricas | API oficial de Instagram (Graph API), app de Meta en modo desarrollo | Gratis |
 | Tipografías Poppins e Inter | Google Fonts (licencia OFL) | Gratis |
 
 Los guiones y copies de las 16 piezas del primer mes (23 de noviembre al 19 de diciembre de 2026) ya
@@ -52,31 +52,28 @@ con el nombre `PUBLIC_BASE_URL` y esa dirección como valor (sin `/` al final).
 
 ### 4. Conecta Instagram (gratis, sin revisión de Meta)
 
-Para publicar en **tu propia** cuenta, la app de Meta puede quedarse en modo desarrollo: no necesitas
-App Review.
+Ya está configurado para la cuenta **@eddyai1995**:
 
-1. En la app de Instagram, pasa la cuenta de Eddy a **cuenta profesional de tipo Empresa**
-   (*Configuración → Tipo de cuenta y herramientas*).
-2. Entra a [developers.facebook.com](https://developers.facebook.com) → *Mis apps → Crear app* →
-   elige el caso de uso de **Instagram** (administrar mensajes y contenido) → tipo **Business**.
-3. En la app: *Instagram → Configuración de la API con inicio de sesión de Instagram*.
-   - En *Roles*, agrega la cuenta de Instagram de Eddy como **evaluador de Instagram** y acepta la
-     invitación desde Instagram (*Configuración → Apps y sitios web → Invitaciones de evaluador*).
-   - Pide los permisos `instagram_business_basic`, `instagram_business_content_publish` e
-     `instagram_business_manage_insights`.
-   - En *Generar tokens de acceso*, agrega la cuenta y copia el **token** y el **ID de usuario** de Instagram.
-4. Guárdalos en GitHub como **secretos** (*Settings → Secrets and variables → Actions → New repository secret*):
-   - `IG_USER_ID` → el ID de usuario
-   - `IG_ACCESS_TOKEN` → el token
+- App de Meta **Eddy IA Publicador** (modo desarrollo) con los permisos `instagram_basic`,
+  `instagram_content_publish`, `instagram_manage_insights`, `pages_show_list`, `pages_read_engagement`
+  y `business_management`.
+- Portfolio comercial **Eddy IA**, con la cuenta de Instagram y el usuario del sistema **Eddy Bot**.
+- El token de Eddy Bot **no vence**. Si algún día hay que cambiarlo: business.facebook.com →
+  Configuración → Usuarios del sistema → Eddy Bot → **Generar token** (app Eddy IA Publicador,
+  caducidad *Nunca*, los 6 permisos de arriba).
+
+Secretos en GitHub (*Settings → Secrets and variables → Actions*):
+
+- `IG_USER_ID` → `17841475316920941` (ID de @eddyai1995)
+- `IG_ACCESS_TOKEN` → el token de Eddy Bot
+
+Para comprobar que todo funciona: *Actions → 4 · Probar conexión con Instagram → Run workflow*.
 
 ### 5. Opcionales
 
 - **Gemini (guiones de meses nuevos):** crea una clave gratis en [aistudio.google.com](https://aistudio.google.com)
   → secreto `GEMINI_API_KEY`. Ojo: en el nivel gratuito Google puede usar lo que envías para mejorar sus
   modelos; solo se envían datos de marketing, nunca datos de alumnos.
-- **Renovación automática del token** (dura 60 días): crea un *fine-grained token* en GitHub
-  (*Settings de tu perfil → Developer settings*) con permiso *Secrets: Read and write* sobre este
-  repositorio → secreto `GH_PAT`. Sin él, renueva el token a mano cada 50 días.
 - **Voz femenina:** variable `EDDY_VOZ` = `es-PE-CamilaNeural`.
 - **Música de fondo:** coloca un archivo libre de derechos en `marca/musica.mp3`; se mezcla bajito.
 
