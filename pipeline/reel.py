@@ -18,6 +18,7 @@ from pathlib import Path
 import numpy as np
 from PIL import Image, ImageDraw
 
+from . import animaciones as A
 from . import graficos as G
 from . import marca as M
 from . import voz as V
@@ -44,6 +45,8 @@ class Escena:
     demo_caja: tuple | None = None
     demo_tam: tuple | None = None
     avisos: list = field(default_factory=list)
+    anim: object = None                   # animación ilustrativa en lugar de grabación
+    anim_mascara: object = None
 
 
 # ---------- capas estáticas por tipo de escena ----------
@@ -61,7 +64,34 @@ def _base_avatar(e: Escena):
     e.y_subtitulo = 714
 
 
+CAJA_ANIM = (40, 470, 1040, 1170)    # 1000 x 700, el lienzo de las animaciones
+
+
+def _base_anim(e: Escena) -> bool:
+    """Escena con animación ilustrativa (anim:<nombre>) en lugar de grabación."""
+    nombre = e.demo[5:].strip()
+    e.anim = A.obtener(nombre)
+    if not e.anim:
+        e.avisos.append(f"No existe la animación '{e.demo}'. Opciones: {', '.join('anim:' + n for n in A.NOMBRES)}")
+        e.demo = None
+        return False
+    im = G.fondo_claro(W, H)
+    G.pegar_logo(im, 64, 292, 50)
+    f = G.ajustar_fuente(e.pantalla, lambda s: M.poppins(s, "bold"), 64, 40, 960, 2, alto_max=100)
+    G.dibujar_texto(im, e.pantalla, f, (60, 352, 1020, 452), M.TINTA, M.AZUL)
+    G.rect_redondeado(im, (30, 460, 1050, 1180), 34, M.BLANCO, sombra=True)
+    e.base = im
+    e.demo_caja = CAJA_ANIM[:2]
+    e.demo_tam = (CAJA_ANIM[2] - CAJA_ANIM[0], CAJA_ANIM[3] - CAJA_ANIM[1])
+    e.avatar = ("circulo", 850, 1000, 200)
+    e.y_subtitulo = 1206
+    e.demo = None
+    return True
+
+
 def _base_demo(e: Escena, raiz: Path):
+    if e.demo and e.demo.startswith("anim:") and _base_anim(e):
+        return
     im = G.fondo_claro(W, H)
     G.pegar_logo(im, 64, 292, 50)
     f = G.ajustar_fuente(e.pantalla, lambda s: M.poppins(s, "bold"), 64, 40, 940, 2, alto_max=128)
@@ -176,7 +206,7 @@ def _imagen_subtitulo(texto: str) -> Image.Image:
     h = alto_linea * len(lineas) + 28
     im = Image.new("RGBA", (w, h), (0, 0, 0, 0))
     ImageDraw.Draw(im).rounded_rectangle((0, 0, w - 1, h - 1), 26, fill=(255, 255, 255, 240))
-    G.dibujar_texto(im, texto, f, (32, 14, w - 32, h - 14), M.TINTA, M.AZUL, interlineado=0.86)
+    G.dibujar_texto(im, texto, f, (28, 14, w - 28, h - 14), M.TINTA, M.AZUL, interlineado=0.86)
     return im
 
 
@@ -263,7 +293,13 @@ def renderizar(pieza: dict, contenido: dict, salida: Path, raiz: Path) -> dict:
                     lector = None
             e = escenas[idx]
             cuadro = e.base.copy()
-            if e.tipo == "demo" and e.demo:
+            if e.anim is not None:
+                if e.anim_mascara is None:
+                    e.anim_mascara = Image.new("L", e.demo_tam, 0)
+                    ImageDraw.Draw(e.anim_mascara).rounded_rectangle((0, 0, e.demo_tam[0] - 1, e.demo_tam[1] - 1), 22, fill=255)
+                prog = (tt - e.inicio) / max(0.01, e.fin - e.inicio)
+                cuadro.paste(e.anim(prog, *e.demo_tam), e.demo_caja, e.anim_mascara)
+            elif e.tipo == "demo" and e.demo:
                 if lector is None:
                     lector = LectorDemo(e.demo, e.demo_inicio, e.fin - e.inicio, e.demo_tam)
                 fr = lector.siguiente()

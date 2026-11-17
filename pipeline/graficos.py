@@ -55,7 +55,7 @@ def envolver(texto: str, fuente, ancho_max: int):
     ancho = 0.0
     for palabra, res in _tokens(texto):
         w = fuente.getlength(palabra)
-        if actual and ancho + espacio + w > ancho_max:
+        if actual and ancho + espacio + w > ancho_max + 1:
             lineas.append(actual)
             actual, ancho = [], 0.0
         ancho += (espacio if actual else 0) + w
