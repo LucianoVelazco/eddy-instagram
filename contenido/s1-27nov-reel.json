@@ -9,13 +9,7 @@
     {
       "tipo": "demo",
       "pantalla": "Foto con el celular y *listo*",
-      "voz": "Le tomas una foto al examen con el celular, lo subes, y Eddy lee las respuestas manuscritas y las compara con tu clave."
-    },
-    {
-      "tipo": "demo",
-      "pantalla": "Tú revisas el *resultado*",
-      "voz": "En pantalla ves el resultado preliminar de cada pregunta. Tú lo revisas y decides.",
-      "demo_inicio": 8
+      "voz": "Le tomas una foto al examen con el celular y Eddy lee las respuestas manuscritas, las compara con tu clave y te muestra un resultado preliminar. Tú lo revisas y decides."
     },
     {
       "tipo": "texto",
