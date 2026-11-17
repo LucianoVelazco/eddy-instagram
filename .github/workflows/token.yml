@@ -1,16 +1,16 @@
-name: 4 · Renovar token de Instagram
+name: 4 · Probar conexión con Instagram
 
-# El token de Instagram dura 60 días. Este flujo lo renueva el día 1 y 15 de cada mes.
+# Verifica que el token y el ID de la cuenta funcionen. Se ejecuta a mano y el día 1 de cada mes.
 on:
   schedule:
-    - cron: "41 15 1,15 * *"
+    - cron: "41 15 1 * *"
   workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
-  token:
+  conexion:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -20,9 +20,9 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
-      - name: Renovar
+      - name: Probar conexión
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
-          GH_PAT: ${{ secrets.GH_PAT }}
+          IG_API_VERSION: ${{ vars.IG_API_VERSION }}
         run: python -m pipeline.token
