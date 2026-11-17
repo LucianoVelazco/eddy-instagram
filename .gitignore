@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.env
+docs/media/*/_voz.wav
+.DS_Store
+# se descargan o generan solos al correr el pipeline
+marca/fuentes/*.ttf
+avatar/sprites/*.png
