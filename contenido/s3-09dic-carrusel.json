@@ -1,0 +1,37 @@
+{
+  "laminas": [
+    {
+      "sobretitulo": "Datos para enseñar mejor",
+      "titulo": "Retroalimentación que el alumno *sí lee*",
+      "texto": "Cómo Eddy convierte cada examen en una oportunidad de aprender."
+    },
+    {
+      "titulo": "Un 14 no *explica nada*",
+      "texto": "Una nota sola no le dice al alumno qué hizo bien ni qué tiene que mejorar."
+    },
+    {
+      "titulo": "Respuesta por *respuesta*",
+      "texto": "Eddy da retroalimentación personalizada en cada pregunta, con la respuesta correcta."
+    },
+    {
+      "titulo": "Al *instante*",
+      "texto": "La retroalimentación llega cuando el examen todavía está fresco, no dos semanas después."
+    },
+    {
+      "titulo": "Y tú ves el *panorama*",
+      "texto": "Mientras tanto, tú revisas las estadísticas del grupo y decides qué reforzar en clase."
+    }
+  ],
+  "cta": {
+    "titulo": "Corrige menos, *enseña mejor*",
+    "texto": "Guárdalo y compártelo con tu equipo docente."
+  },
+  "copy": "Un 14 no le explica nada a tu alumno 📝\n\nEddy IA da retroalimentación personalizada en cada respuesta, al instante. Y tú ves las estadísticas del grupo para decidir qué reforzar.\n\nGuarda este post y compártelo con tu equipo docente.",
+  "hashtags": [
+    "#EddyIA",
+    "#docentes",
+    "#retroalimentación",
+    "#evaluación",
+    "#docentesperú"
+  ]
+}

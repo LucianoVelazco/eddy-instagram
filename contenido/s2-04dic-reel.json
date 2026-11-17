@@ -1,0 +1,36 @@
+{
+  "titulo_portada": "Dos respuestas distintas, *el mismo sentido*",
+  "escenas": [
+    {
+      "tipo": "avatar",
+      "pantalla": "Usó otras palabras. ¿Está *mal*?",
+      "voz": "Tu alumno no usó las palabras exactas de la clave. ¿Está mal?"
+    },
+    {
+      "tipo": "demo",
+      "pantalla": "Eddy evalúa el *sentido*",
+      "voz": "Mira: dos alumnos responden con palabras distintas pero la misma idea. Eddy analiza el sentido de cada respuesta y marca las dos como correctas."
+    },
+    {
+      "tipo": "texto",
+      "pantalla": "Sentido, no *palabras exactas*",
+      "voz": "Eddy evalúa lo que el alumno quiso decir, no solo si coincide palabra por palabra."
+    },
+    {
+      "tipo": "cierre"
+    }
+  ],
+  "copy": "Dos respuestas distintas, la misma idea. ¿Las dos están bien? ✅\n\nEddy IA hace análisis semántico: evalúa el sentido de la respuesta, no solo las palabras exactas de tu clave. Y siempre puedes revisar y ajustar.\n\nEscríbenos DEMO por mensaje directo para verlo con tus propios exámenes.",
+  "hashtags": [
+    "#EddyIA",
+    "#docentes",
+    "#evaluación",
+    "#docentesperú",
+    "#inteligenciaartificial"
+  ],
+  "hooks_alternativos": [
+    "Respondió bien, pero con otras palabras.",
+    "¿La IA solo busca palabras clave? No.",
+    "La clave decía una cosa, el alumno escribió otra."
+  ]
+}

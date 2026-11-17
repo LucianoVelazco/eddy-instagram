@@ -1,0 +1,36 @@
+{
+  "laminas": [
+    {
+      "sobretitulo": "Más que corregir",
+      "titulo": "Sube tus exámenes *como quieras*",
+      "texto": "Escaneo, foto o archivo: Eddy se adapta a ti."
+    },
+    {
+      "titulo": "Con el *celular*",
+      "texto": "Tómale foto al examen con buena luz y súbelo. Ideal para exámenes escritos a mano."
+    },
+    {
+      "titulo": "Con *escáner*",
+      "texto": "Escanea el lote y súbelo de una vez. Puedes subir varias pruebas a la vez."
+    },
+    {
+      "titulo": "En *archivo*",
+      "texto": "¿Tu examen fue digital? Sube el archivo directamente."
+    },
+    {
+      "titulo": "Consejo de *profe*",
+      "texto": "Fotos nítidas, sin sombras y con la hoja completa. Si tú lo lees sin esfuerzo, Eddy también."
+    }
+  ],
+  "cta": {
+    "titulo": "Tú eliges *cómo subir*",
+    "texto": "Guarda este post para tu próxima evaluación."
+  },
+  "copy": "¿Celular, escáner o archivo? Con Eddy IA, como prefieras 📲\n\nPuedes subir varias pruebas a la vez, en foto, escaneo o archivo. Solo cuida que se vean nítidas.\n\nGuárdalo para tu próxima evaluación.",
+  "hashtags": [
+    "#EddyIA",
+    "#docentes",
+    "#tipsdocentes",
+    "#evaluación"
+  ]
+}

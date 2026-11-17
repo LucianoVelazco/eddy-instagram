@@ -1,0 +1,42 @@
+{
+  "titulo_portada": "¿Letra a mano? *Eddy también la lee*",
+  "escenas": [
+    {
+      "tipo": "avatar",
+      "pantalla": "¿Exámenes *escritos a mano*?",
+      "voz": "¿Tus exámenes son escritos a mano? Mira esto."
+    },
+    {
+      "tipo": "demo",
+      "pantalla": "Foto con el celular y *listo*",
+      "voz": "Le tomas una foto al examen con el celular, lo subes, y Eddy lee las respuestas manuscritas y las compara con tu clave."
+    },
+    {
+      "tipo": "demo",
+      "pantalla": "Tú revisas el *resultado*",
+      "voz": "En pantalla ves el resultado preliminar de cada pregunta. Tú lo revisas y decides.",
+      "demo_inicio": 8
+    },
+    {
+      "tipo": "texto",
+      "pantalla": "Si un docente la lee, *Eddy también*",
+      "voz": "Si la letra es legible para un docente, Eddy también la puede leer."
+    },
+    {
+      "tipo": "cierre"
+    }
+  ],
+  "copy": "¿Exámenes escritos a mano? Eddy IA también los lee ✍️\n\nFoto con el celular, subes el archivo y Eddy compara cada respuesta con tu clave. Tú revisas el resultado y decides la nota.\n\nConsejo: buena luz y letra legible. Si un docente la entiende, Eddy también.\n\nPruébalo en eddyai.lat (enlace en la bio).",
+  "hashtags": [
+    "#EddyIA",
+    "#docentes",
+    "#evaluación",
+    "#docentesperú",
+    "#inteligenciaartificial"
+  ],
+  "hooks_alternativos": [
+    "Le tomé foto a un examen escrito a mano y pasó esto.",
+    "¿La IA puede leer letra de alumno?",
+    "Corrige exámenes manuscritos desde tu celular."
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "titulo_portada": "Lo que las notas dicen de *tu salón*",
+  "escenas": [
+    {
+      "tipo": "avatar",
+      "pantalla": "¿Qué pregunta *falló* todo tu salón?",
+      "voz": "¿Sabes qué pregunta del examen falló casi todo tu salón?"
+    },
+    {
+      "tipo": "avatar",
+      "pantalla": "Las notas *también enseñan*",
+      "voz": "Las notas no solo sirven para la libreta. También te dicen qué tienes que volver a explicar."
+    },
+    {
+      "tipo": "demo",
+      "pantalla": "Resultados por alumno y *por grupo*",
+      "voz": "Eddy te muestra los resultados de cada estudiante y las estadísticas de cada grupo, para que veas dónde reforzar."
+    },
+    {
+      "tipo": "cierre"
+    }
+  ],
+  "copy": "¿Qué pregunta falló casi todo tu salón? 📊\n\nCon Eddy IA, al terminar la corrección ves los resultados por estudiante y las estadísticas de cada grupo. Así sabes qué volver a explicar en la próxima clase.\n\nPruébalo en eddyai.lat (enlace en la bio).",
+  "hashtags": [
+    "#EddyIA",
+    "#docentes",
+    "#evaluación",
+    "#docentesperú",
+    "#inteligenciaartificial"
+  ],
+  "hooks_alternativos": [
+    "Tus notas te están diciendo algo.",
+    "La pregunta 4 la falló medio salón. ¿Y ahora?",
+    "Corrige y descubre qué reforzar."
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "titulo_portada": "De un tema a *tus diapositivas*",
+  "escenas": [
+    {
+      "tipo": "avatar",
+      "pantalla": "Eddy también *prepara clases*",
+      "voz": "Eddy no solo corrige. ¿Sabías que también te ayuda a preparar tus clases?"
+    },
+    {
+      "tipo": "demo",
+      "pantalla": "Escribe el tema, *Eddy arma las diapositivas*",
+      "voz": "Escribes el tema de tu clase y Eddy crea un set de diapositivas que puedes revisar y ajustar a tu estilo."
+    },
+    {
+      "tipo": "texto",
+      "pantalla": "Más tiempo para *planificar*",
+      "voz": "Menos horas armando presentaciones, más tiempo para planificar y enseñar."
+    },
+    {
+      "tipo": "cierre"
+    }
+  ],
+  "copy": "Eddy IA también te ayuda a preparar tus clases 🎓\n\nEscribes el tema y Eddy crea un set de diapositivas que tú revisas y ajustas a tu estilo.\n\nPruébalo en eddyai.lat (enlace en la bio).",
+  "hashtags": [
+    "#EddyIA",
+    "#docentes",
+    "#planificación",
+    "#inteligenciaartificial",
+    "#docentesperú"
+  ],
+  "hooks_alternativos": [
+    "Tu próxima clase, lista en minutos.",
+    "¿Todavía armas tus diapositivas desde cero?",
+    "Eddy no solo corrige."
+  ]
+}

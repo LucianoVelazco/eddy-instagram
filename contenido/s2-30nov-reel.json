@@ -1,0 +1,41 @@
+{
+  "titulo_portada": "¿La IA me va a *reemplazar*?",
+  "escenas": [
+    {
+      "tipo": "texto",
+      "pantalla": "¿La IA va a *reemplazarme*?",
+      "voz": "Una pregunta que nos hacen mucho: ¿la inteligencia artificial va a reemplazar al docente?"
+    },
+    {
+      "tipo": "avatar",
+      "pantalla": "No. *Tú decides.*",
+      "voz": "No. Eddy te da un resultado preliminar, pero la nota final la decides tú."
+    },
+    {
+      "tipo": "demo",
+      "pantalla": "Ajusta cualquier nota *a mano*",
+      "voz": "Abres el resultado, revisas cada respuesta y, si no estás de acuerdo, ajustas la nota. Tú defines los criterios y Eddy hace lo repetitivo."
+    },
+    {
+      "tipo": "avatar",
+      "pantalla": "No te reemplaza: *te devuelve tiempo*",
+      "voz": "Eddy no reemplaza al docente. Le devuelve tiempo."
+    },
+    {
+      "tipo": "cierre"
+    }
+  ],
+  "copy": "¿La IA va a reemplazar al docente? No.\n\nEddy IA te entrega un resultado preliminar y tú revisas, ajustas y decides la nota final. Tú defines los criterios; la IA hace el trabajo repetitivo.\n\n¿Tienes otra pregunta sobre Eddy? Déjala en los comentarios y te respondemos en un reel.",
+  "hashtags": [
+    "#EddyIA",
+    "#docentes",
+    "#evaluación",
+    "#docentesperú",
+    "#inteligenciaartificial"
+  ],
+  "hooks_alternativos": [
+    "La pregunta que más nos hacen los profes.",
+    "¿Quién pone la nota: tú o la IA?",
+    "Spoiler: la última palabra es tuya."
+  ]
+}

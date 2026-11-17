@@ -1,0 +1,37 @@
+{
+  "laminas": [
+    {
+      "sobretitulo": "Corrección justa",
+      "titulo": "Los mismos criterios para *todos* tus alumnos",
+      "texto": "Así funciona la corrección con rúbrica en Eddy."
+    },
+    {
+      "titulo": "El cansancio también *corrige*",
+      "texto": "El examen número 40 no se corrige igual que el primero. Es humano: a esa hora ya estás cansado."
+    },
+    {
+      "titulo": "Una rúbrica, *una sola vara*",
+      "texto": "Defines tus criterios una vez y Eddy los aplica igual a cada examen, del primero al último."
+    },
+    {
+      "titulo": "Evalúa el *sentido*",
+      "texto": "Eddy compara el sentido de cada respuesta, no solo si coincide palabra por palabra con la clave."
+    },
+    {
+      "titulo": "Tú tienes la *última palabra*",
+      "texto": "Revisa el resultado preliminar y ajusta lo que haga falta. Las notas finales siempre son tuyas."
+    }
+  ],
+  "cta": {
+    "titulo": "Corrección *más justa*, menos horas",
+    "texto": "Compártelo con el colega que corrige hasta tarde."
+  },
+  "copy": "¿El examen 40 se corrige igual que el primero? 🤔\n\nCon Eddy IA defines tu rúbrica una vez y se aplica igual a cada alumno. Tú revisas el resultado y decides la nota.\n\nCompártelo con un colega que esté en semana de exámenes.",
+  "hashtags": [
+    "#EddyIA",
+    "#docentes",
+    "#evaluación",
+    "#rúbricas",
+    "#docentesperú"
+  ]
+}

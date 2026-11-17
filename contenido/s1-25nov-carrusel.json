@@ -1,0 +1,41 @@
+{
+  "laminas": [
+    {
+      "sobretitulo": "Tiempo devuelto",
+      "titulo": "Corrige con Eddy en *5 pasos*",
+      "texto": "De la pila de exámenes a las notas, sin perder el control."
+    },
+    {
+      "titulo": "Prepara tu *clave o rúbrica*",
+      "texto": "El examen resuelto o los criterios con los que Eddy compara cada respuesta. Si tú lo entiendes sin esfuerzo, la IA también."
+    },
+    {
+      "titulo": "Sube los *exámenes*",
+      "texto": "Escaneo, foto con el celular o archivo. Puedes subir varias pruebas a la vez."
+    },
+    {
+      "titulo": "Eddy *analiza y corrige*",
+      "texto": "Revisa cada respuesta por su sentido, no solo por palabras exactas. Funciona con textos, cálculos y gráficos."
+    },
+    {
+      "titulo": "Revisa y *ajusta*",
+      "texto": "Eddy te entrega un resultado preliminar. Tú revisas, cambias lo que haga falta y decides la nota final."
+    },
+    {
+      "titulo": "Mira la *retroalimentación*",
+      "texto": "Cada alumno recibe retroalimentación inmediata y tú ves las estadísticas de tu grupo."
+    }
+  ],
+  "cta": {
+    "titulo": "Más tiempo para *enseñar*",
+    "texto": "Guarda este post para tu próxima semana de exámenes."
+  },
+  "copy": "Guárdalo para tu próxima semana de exámenes 📌\n\nAsí funciona Eddy IA en 5 pasos: preparas tu clave, subes los exámenes, Eddy corrige, tú revisas y decides, y miras la retroalimentación.\n\n¿Lo quieres probar? Entra a eddyai.lat (enlace en la bio).",
+  "hashtags": [
+    "#EddyIA",
+    "#docentes",
+    "#evaluación",
+    "#tipsdocentes",
+    "#docentesperú"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "titulo_portada": "Tus vacaciones *empiezan antes*",
+  "escenas": [
+    {
+      "tipo": "texto",
+      "pantalla": "Antes: exámenes *hasta la madrugada*",
+      "voz": "Antes: fin de año, pilas de exámenes y noches corrigiendo hasta la madrugada."
+    },
+    {
+      "tipo": "demo",
+      "pantalla": "Ahora: *Eddy corrige* contigo",
+      "voz": "Ahora: subes los exámenes, Eddy corrige con tus criterios y tú solo revisas y decides."
+    },
+    {
+      "tipo": "texto",
+      "pantalla": "Tus vacaciones *empiezan antes*",
+      "voz": "Ahorra hasta un noventa por ciento de tu tiempo de evaluación. Tus vacaciones empiezan antes."
+    },
+    {
+      "tipo": "cierre"
+    }
+  ],
+  "copy": "Este fin de año, que tus vacaciones empiecen antes 🎄\n\nCon Eddy IA subes tus exámenes, defines tus criterios y revisas el resultado. Ahorra hasta un 90% de tu tiempo de evaluación.\n\nEscríbenos DEMO por mensaje directo antes de tus exámenes finales.",
+  "hashtags": [
+    "#EddyIA",
+    "#docentes",
+    "#evaluación",
+    "#docentesperú",
+    "#inteligenciaartificial"
+  ],
+  "hooks_alternativos": [
+    "Así cerré el año sin noches de corrección.",
+    "Fin de año: tú o la pila de exámenes.",
+    "Que diciembre no se te vaya corrigiendo."
+  ]
+}

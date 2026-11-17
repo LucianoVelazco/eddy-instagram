@@ -1,0 +1,36 @@
+{
+  "titulo_portada": "Una sola vara para *todo tu equipo*",
+  "escenas": [
+    {
+      "tipo": "avatar",
+      "pantalla": "¿Todos corrigen *con la misma vara*?",
+      "voz": "Si diriges un colegio o una carrera: ¿todos tus docentes corrigen con la misma vara?"
+    },
+    {
+      "tipo": "avatar",
+      "pantalla": "Mismo curso, *notas distintas*",
+      "voz": "Dos secciones del mismo curso, dos docentes, y criterios que no siempre coinciden."
+    },
+    {
+      "tipo": "demo",
+      "pantalla": "Los mismos criterios en *todas las secciones*",
+      "voz": "Con Eddy, cada examen se evalúa con los mismos criterios, en todos los cursos y secciones. Y tus docentes cargan menos trabajo."
+    },
+    {
+      "tipo": "cierre"
+    }
+  ],
+  "copy": "¿Todos tus docentes corrigen con la misma vara? 🏫\n\nEddy IA trabaja con colegios y universidades: evaluación más uniforme entre docentes y cursos, y menos carga para tu equipo.\n\nEscríbenos INSTITUCIÓN por mensaje directo y coordinamos una demo para tu equipo.",
+  "hashtags": [
+    "#EddyIA",
+    "#directivos",
+    "#gestióneducativa",
+    "#evaluación",
+    "#educaciónperú"
+  ],
+  "hooks_alternativos": [
+    "Directores: esto es para ustedes.",
+    "Mismo curso, dos docentes, dos notas distintas.",
+    "¿Tu colegio evalúa con los mismos criterios?"
+  ]
+}

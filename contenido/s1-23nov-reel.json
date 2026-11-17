@@ -1,0 +1,41 @@
+{
+  "titulo_portada": "¿Cuántas *noches* se te van en corregir?",
+  "escenas": [
+    {
+      "tipo": "avatar",
+      "pantalla": "¿Cuántas *noches* se van en corregir?",
+      "voz": "Profe, ¿cuántas noches de esta semana se te fueron corrigiendo exámenes?"
+    },
+    {
+      "tipo": "avatar",
+      "pantalla": "Menos tiempo para *enseñar y descansar*",
+      "voz": "Cada hora corrigiendo es una hora menos para planificar, enseñar o simplemente descansar."
+    },
+    {
+      "tipo": "demo",
+      "pantalla": "Subes, defines criterios y *Eddy corrige*",
+      "voz": "Con Eddy subes los exámenes, defines tu clave o rúbrica, y Eddy corrige cada respuesta en minutos. Tú revisas y decides la nota."
+    },
+    {
+      "tipo": "texto",
+      "pantalla": "Ahorra *hasta 90%* de tu tiempo",
+      "voz": "Ahorra hasta un noventa por ciento de tu tiempo de evaluación."
+    },
+    {
+      "tipo": "cierre"
+    }
+  ],
+  "copy": "¿Cuántas noches de esta semana se fueron en corregir? 🌙\n\nCon Eddy IA subes tus exámenes, defines tus criterios y recibes un resultado preliminar en minutos. Tú revisas y decides la nota final.\n\nEscríbenos DEMO por mensaje directo y te mostramos cómo funciona.",
+  "hashtags": [
+    "#EddyIA",
+    "#docentes",
+    "#evaluación",
+    "#docentesperú",
+    "#inteligenciaartificial"
+  ],
+  "hooks_alternativos": [
+    "Profe, tu fin de semana no es para corregir.",
+    "¿Y si el examen se corrige mientras planificas tu clase?",
+    "Esta semana de exámenes puede ser distinta."
+  ]
+}

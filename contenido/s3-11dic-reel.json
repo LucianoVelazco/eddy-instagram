@@ -1,0 +1,36 @@
+{
+  "titulo_portada": "¿Lo escribió tu alumno *o una IA*?",
+  "escenas": [
+    {
+      "tipo": "avatar",
+      "pantalla": "¿Lo escribió tu alumno *o una IA*?",
+      "voz": "¿Ese ensayo lo escribió tu alumno o una inteligencia artificial?"
+    },
+    {
+      "tipo": "demo",
+      "pantalla": "Eddy muestra el *porcentaje con IA*",
+      "voz": "Eddy te muestra qué porcentaje del trabajo parece hecho con inteligencia artificial, junto con la corrección."
+    },
+    {
+      "tipo": "avatar",
+      "pantalla": "Una *señal* para revisar",
+      "voz": "Tómalo como una señal para revisar y conversar con tu alumno, no como una prueba definitiva."
+    },
+    {
+      "tipo": "cierre"
+    }
+  ],
+  "copy": "¿Lo escribió tu alumno o una IA? 🤖\n\nEddy IA te muestra qué porcentaje del trabajo parece hecho con inteligencia artificial. Úsalo como una señal para revisar y conversar, no como una prueba definitiva.\n\nPruébalo en eddyai.lat (enlace en la bio).",
+  "hashtags": [
+    "#EddyIA",
+    "#docentes",
+    "#evaluación",
+    "#docentesperú",
+    "#inteligenciaartificial"
+  ],
+  "hooks_alternativos": [
+    "Ese ensayo suena demasiado perfecto.",
+    "¿Cómo saber si un trabajo se hizo con IA?",
+    "La IA también ayuda a detectar IA."
+  ]
+}
