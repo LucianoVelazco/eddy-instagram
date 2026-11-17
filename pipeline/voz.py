@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import asyncio
 import os
+import re
 import subprocess
 import tempfile
 from dataclasses import dataclass, field
@@ -64,6 +65,24 @@ def _repartir(texto: str, dur: float, inicio: float = 0.0):
     return [(inicio + cortes[i], inicio + cortes[i + 1], p) for i, p in enumerate(pals)]
 
 
+def _norm(p: str) -> str:
+    return re.sub(r"[^\wáéíóúüñ]", "", p.lower())
+
+
+def _con_puntuacion(palabras: list, texto: str) -> list:
+    """edge-tts devuelve las palabras sin puntuación; las alinea con el guion para recuperarla
+    (así los subtítulos cortan en los puntos y las comas)."""
+    orig, j, out = texto.split(), 0, []
+    for a, b, p in palabras:
+        np_ = _norm(p)
+        for k in range(j, min(j + 4, len(orig))):
+            if _norm(orig[k]) == np_ or (np_ and _norm(orig[k]).startswith(np_)):
+                p, j = orig[k], k + 1
+                break
+        out.append((a, b, p))
+    return out
+
+
 def sintetizar(texto: str) -> Locucion:
     texto = " ".join(texto.split())
     if not texto:
@@ -77,7 +96,7 @@ def sintetizar(texto: str) -> Locucion:
             if len(audio) > SR * 0.3:
                 if not palabras:
                     palabras = _repartir(texto, len(audio) / SR)
-                return Locucion(audio, palabras)
+                return Locucion(audio, _con_puntuacion(palabras, texto))
         except Exception as e:  # sin red o servicio caído
             print(f"  [voz] edge-tts no disponible ({type(e).__name__}: {e}); uso voz simulada")
     # Voz simulada: ~2.6 palabras por segundo, con un tono bajo modulado para probar el lip-sync
