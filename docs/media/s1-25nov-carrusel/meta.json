@@ -1,0 +1,21 @@
+{
+  "id": "s1-25nov-carrusel",
+  "formato": "carrusel",
+  "fecha": "2026-11-25",
+  "hora": "19:00",
+  "archivos": [
+    "lamina_01.jpg",
+    "lamina_02.jpg",
+    "lamina_03.jpg",
+    "lamina_04.jpg",
+    "lamina_05.jpg",
+    "lamina_06.jpg",
+    "lamina_07.jpg"
+  ],
+  "texto": "Guárdalo para tu próxima semana de exámenes 📌\n\nAsí funciona Eddy IA en 5 pasos: preparas tu clave, subes los exámenes, Eddy corrige, tú revisas y decides, y miras la retroalimentación.\n\n¿Lo quieres probar? Entra a eddyai.lat (enlace en la bio).\n\n#EddyIA #docentes #evaluación #tipsdocentes #docentesperú",
+  "hooks_alternativos": [],
+  "origen_guion": "archivo",
+  "avisos": [],
+  "duracion_s": null,
+  "generado": "2026-11-17T14:59-05:00"
+}

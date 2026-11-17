@@ -1,0 +1,20 @@
+{
+  "id": "s1-27nov-reel",
+  "formato": "reel_demo",
+  "fecha": "2026-11-27",
+  "hora": "19:00",
+  "archivos": [
+    "reel.mp4",
+    "portada.jpg"
+  ],
+  "texto": "¿Exámenes escritos a mano? Eddy IA también los lee ✍️\n\nFoto con el celular, subes el archivo y Eddy compara cada respuesta con tu clave. Tú revisas el resultado y decides la nota.\n\nConsejo: buena luz y letra legible. Si un docente la entiende, Eddy también.\n\nPruébalo en eddyai.lat (enlace en la bio).\n\n#EddyIA #docentes #evaluación #docentesperú #inteligenciaartificial",
+  "hooks_alternativos": [
+    "Le tomé foto a un examen escrito a mano y pasó esto.",
+    "¿La IA puede leer letra de alumno?",
+    "Corrige exámenes manuscritos desde tu celular."
+  ],
+  "origen_guion": "archivo",
+  "avisos": [],
+  "duracion_s": 29.2,
+  "generado": "2026-11-17T14:59-05:00"
+}
