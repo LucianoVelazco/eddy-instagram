@@ -77,10 +77,12 @@ Para comprobar que todo funciona: *Actions → 4 · Probar conexión con Instagr
 - **Voz femenina:** variable `EDDY_VOZ` = `es-PE-CamilaNeural`.
 - **Música de fondo:** coloca un archivo libre de derechos en `marca/musica.mp3`; se mezcla bajito.
 
-### 6. Graba las demos
+### 6. Demos: animaciones automáticas (o grabaciones, si quieres)
 
-Sigue la lista de [`demos/LEEME.md`](demos/LEEME.md) y sube los MP4 a la carpeta `demos/`.
-Son la prueba de cada bondad: sin ellas, los reels salen con una tarjeta de texto.
+Cada reel ya trae una **animación generada** que ilustra la bondad (`anim:lote`, `anim:manuscrito`, etc.,
+en la columna `demo` del calendario). No hay que grabar nada. Si algún día quieres usar una grabación
+real de la plataforma, súbela a `demos/` y pon su ruta en esa columna. Detalle en
+[`demos/LEEME.md`](demos/LEEME.md).
 
 ### 7. Prueba
 
@@ -111,7 +113,7 @@ Agrega filas a `calendario/calendario.csv` con estado `pendiente`:
 | `formato` | `reel_avatar` | `reel_avatar`, `reel_demo`, `reel_faq`, `reel_antes_despues`, `carrusel`, `post`, `story` |
 | `pilar`, `bondad`, `titulo` | texto libre | orientan el guion |
 | `modulo` | `correccion` | `correccion`, `contenido`, `plan`, `gestion` (color del carrusel) |
-| `demo` | `demos/ahorro-lote.mp4` | solo para reels |
+| `demo` | `anim:lote` o `demos/archivo.mp4` | solo para reels; ver demos/LEEME.md |
 
 Si existe `contenido/<id>.json`, se usa ese guion. Si no, lo escribe Gemini (si configuraste la clave) y
 queda guardado para que lo revises en el PR. Copia cualquiera de los JSON del primer mes como modelo.
