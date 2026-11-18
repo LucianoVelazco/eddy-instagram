@@ -1,0 +1,20 @@
+{
+  "id": "s1-23nov-reel",
+  "formato": "reel_avatar",
+  "fecha": "2026-11-23",
+  "hora": "19:00",
+  "archivos": [
+    "reel.mp4",
+    "portada.jpg"
+  ],
+  "texto": "¿Cuántas noches de esta semana se fueron en corregir? 🌙\n\nCon Eddy IA subes tus exámenes, defines tus criterios y recibes un resultado preliminar en minutos. Tú revisas y decides la nota final.\n\nEscríbenos DEMO por mensaje directo y te mostramos cómo funciona.\n\n#EddyIA #docentes #evaluación #docentesperú #inteligenciaartificial",
+  "hooks_alternativos": [
+    "Profe, tu fin de semana no es para corregir.",
+    "¿Y si el examen se corrige mientras planificas tu clase?",
+    "Esta semana de exámenes puede ser distinta."
+  ],
+  "origen_guion": "archivo",
+  "avisos": [],
+  "duracion_s": 33.4,
+  "generado": "2026-11-18T16:58-05:00"
+}
