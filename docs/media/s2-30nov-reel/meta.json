@@ -1,0 +1,20 @@
+{
+  "id": "s2-30nov-reel",
+  "formato": "reel_faq",
+  "fecha": "2026-11-30",
+  "hora": "19:00",
+  "archivos": [
+    "reel.mp4",
+    "portada.jpg"
+  ],
+  "texto": "¿La IA va a reemplazar al docente? No.\n\nEddy IA te entrega un resultado preliminar y tú revisas, ajustas y decides la nota final. Tú defines los criterios; la IA hace el trabajo repetitivo.\n\n¿Tienes otra pregunta sobre Eddy? Déjala en los comentarios y te respondemos en un reel.\n\n#EddyIA #docentes #evaluación #docentesperú #inteligenciaartificial",
+  "hooks_alternativos": [
+    "La pregunta que más nos hacen los profes.",
+    "¿Quién pone la nota: tú o la IA?",
+    "Spoiler: la última palabra es tuya."
+  ],
+  "origen_guion": "archivo",
+  "avisos": [],
+  "duracion_s": 35.8,
+  "generado": "2026-11-25T18:07-05:00"
+}

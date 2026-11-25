@@ -1,0 +1,20 @@
+{
+  "id": "s2-02dic-carrusel",
+  "formato": "carrusel",
+  "fecha": "2026-12-02",
+  "hora": "19:00",
+  "archivos": [
+    "lamina_01.jpg",
+    "lamina_02.jpg",
+    "lamina_03.jpg",
+    "lamina_04.jpg",
+    "lamina_05.jpg",
+    "lamina_06.jpg"
+  ],
+  "texto": "¿El examen 40 se corrige igual que el primero? 🤔\n\nCon Eddy IA defines tu rúbrica una vez y se aplica igual a cada alumno. Tú revisas el resultado y decides la nota.\n\nCompártelo con un colega que esté en semana de exámenes.\n\n#EddyIA #docentes #evaluación #rúbricas #docentesperú",
+  "hooks_alternativos": [],
+  "origen_guion": "archivo",
+  "avisos": [],
+  "duracion_s": null,
+  "generado": "2026-11-25T18:07-05:00"
+}
