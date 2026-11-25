@@ -5,56 +5,77 @@ Al hacer **merge** de este PR, las piezas de abajo quedan **aprobadas** y se pub
 - Para **frenar** una pieza: en este PR edita `calendario/calendario.csv` y cambia su estado a `pausado`.
 - Para **corregir** un texto o guion: edita `contenido/<id>.json` en `main`, cierra este PR y vuelve a correr *1 · Generar piezas* con ese id.
 
-## 2026-11-25 19:00 · carrusel · `s1-25nov-carrusel`
+## 2026-11-30 19:00 · reel_faq · `s2-30nov-reel`
 
-<img src="https://raw.githubusercontent.com/LucianoVelazco/eddy-instagram/piezas/20261120-1515/docs/media/s1-25nov-carrusel/lamina_01.jpg" width="180"> <img src="https://raw.githubusercontent.com/LucianoVelazco/eddy-instagram/piezas/20261120-1515/docs/media/s1-25nov-carrusel/lamina_02.jpg" width="180"> <img src="https://raw.githubusercontent.com/LucianoVelazco/eddy-instagram/piezas/20261120-1515/docs/media/s1-25nov-carrusel/lamina_03.jpg" width="180"> <img src="https://raw.githubusercontent.com/LucianoVelazco/eddy-instagram/piezas/20261120-1515/docs/media/s1-25nov-carrusel/lamina_04.jpg" width="180"> <img src="https://raw.githubusercontent.com/LucianoVelazco/eddy-instagram/piezas/20261120-1515/docs/media/s1-25nov-carrusel/lamina_05.jpg" width="180"> <img src="https://raw.githubusercontent.com/LucianoVelazco/eddy-instagram/piezas/20261120-1515/docs/media/s1-25nov-carrusel/lamina_06.jpg" width="180"> <img src="https://raw.githubusercontent.com/LucianoVelazco/eddy-instagram/piezas/20261120-1515/docs/media/s1-25nov-carrusel/lamina_07.jpg" width="180">
+<img src="https://raw.githubusercontent.com/LucianoVelazco/eddy-instagram/piezas/20261125-1807/docs/media/s2-30nov-reel/portada.jpg" width="220">
 
-**Texto de la publicación:**
-
-```text
-Guárdalo para tu próxima semana de exámenes 📌
-
-Así funciona Eddy IA en 5 pasos: preparas tu clave, subes los exámenes, Eddy corrige, tú revisas y decides, y miras la retroalimentación.
-
-¿Lo quieres probar? Entra a eddyai.lat (enlace en la bio).
-
-#EddyIA #docentes #evaluación #tipsdocentes #docentesperú
-```
-
-## 2026-11-27 19:00 · reel_demo · `s1-27nov-reel`
-
-<img src="https://raw.githubusercontent.com/LucianoVelazco/eddy-instagram/piezas/20261120-1515/docs/media/s1-27nov-reel/portada.jpg" width="220">
-
-[Ver el reel (29.2 s)](https://raw.githubusercontent.com/LucianoVelazco/eddy-instagram/piezas/20261120-1515/docs/media/s1-27nov-reel/reel.mp4)
+[Ver el reel (35.8 s)](https://raw.githubusercontent.com/LucianoVelazco/eddy-instagram/piezas/20261125-1807/docs/media/s2-30nov-reel/reel.mp4)
 
 **Texto de la publicación:**
 
 ```text
-¿Exámenes escritos a mano? Eddy IA también los lee ✍️
+¿La IA va a reemplazar al docente? No.
 
-Foto con el celular, subes el archivo y Eddy compara cada respuesta con tu clave. Tú revisas el resultado y decides la nota.
+Eddy IA te entrega un resultado preliminar y tú revisas, ajustas y decides la nota final. Tú defines los criterios; la IA hace el trabajo repetitivo.
 
-Consejo: buena luz y letra legible. Si un docente la entiende, Eddy también.
-
-Pruébalo en eddyai.lat (enlace en la bio).
+¿Tienes otra pregunta sobre Eddy? Déjala en los comentarios y te respondemos en un reel.
 
 #EddyIA #docentes #evaluación #docentesperú #inteligenciaartificial
 ```
 
-Hooks alternativos: Le tomé foto a un examen escrito a mano y pasó esto. · ¿La IA puede leer letra de alumno? · Corrige exámenes manuscritos desde tu celular.
+Hooks alternativos: La pregunta que más nos hacen los profes. · ¿Quién pone la nota: tú o la IA? · Spoiler: la última palabra es tuya.
 
-## 2026-11-28 10:00 · post · `s1-28nov-post`
+## 2026-12-02 19:00 · carrusel · `s2-02dic-carrusel`
 
-<img src="https://raw.githubusercontent.com/LucianoVelazco/eddy-instagram/piezas/20261120-1515/docs/media/s1-28nov-post/post.jpg" width="180">
+<img src="https://raw.githubusercontent.com/LucianoVelazco/eddy-instagram/piezas/20261125-1807/docs/media/s2-02dic-carrusel/lamina_01.jpg" width="180"> <img src="https://raw.githubusercontent.com/LucianoVelazco/eddy-instagram/piezas/20261125-1807/docs/media/s2-02dic-carrusel/lamina_02.jpg" width="180"> <img src="https://raw.githubusercontent.com/LucianoVelazco/eddy-instagram/piezas/20261125-1807/docs/media/s2-02dic-carrusel/lamina_03.jpg" width="180"> <img src="https://raw.githubusercontent.com/LucianoVelazco/eddy-instagram/piezas/20261125-1807/docs/media/s2-02dic-carrusel/lamina_04.jpg" width="180"> <img src="https://raw.githubusercontent.com/LucianoVelazco/eddy-instagram/piezas/20261125-1807/docs/media/s2-02dic-carrusel/lamina_05.jpg" width="180"> <img src="https://raw.githubusercontent.com/LucianoVelazco/eddy-instagram/piezas/20261125-1807/docs/media/s2-02dic-carrusel/lamina_06.jpg" width="180">
 
 **Texto de la publicación:**
 
 ```text
-Tu tiempo es para enseñar, no para corregir exámenes.
+¿El examen 40 se corrige igual que el primero? 🤔
 
-Esa es la idea detrás de Eddy IA: que la IA haga lo repetitivo y tú te quedes con lo importante.
+Con Eddy IA defines tu rúbrica una vez y se aplica igual a cada alumno. Tú revisas el resultado y decides la nota.
 
-¿Qué harías con las horas que hoy se van en corregir? Cuéntanos en los comentarios 👇
+Compártelo con un colega que esté en semana de exámenes.
 
-#EddyIA #docentes #educación #docentesperú
+#EddyIA #docentes #evaluación #rúbricas #docentesperú
+```
+
+## 2026-12-04 19:00 · reel_demo · `s2-04dic-reel`
+
+<img src="https://raw.githubusercontent.com/LucianoVelazco/eddy-instagram/piezas/20261125-1807/docs/media/s2-04dic-reel/portada.jpg" width="220">
+
+[Ver el reel (29.5 s)](https://raw.githubusercontent.com/LucianoVelazco/eddy-instagram/piezas/20261125-1807/docs/media/s2-04dic-reel/reel.mp4)
+
+**Texto de la publicación:**
+
+```text
+Dos respuestas distintas, la misma idea. ¿Las dos están bien? ✅
+
+Eddy IA hace análisis semántico: evalúa el sentido de la respuesta, no solo las palabras exactas de tu clave. Y siempre puedes revisar y ajustar.
+
+Escríbenos DEMO por mensaje directo para verlo con tus propios exámenes.
+
+#EddyIA #docentes #evaluación #docentesperú #inteligenciaartificial
+```
+
+Hooks alternativos: Respondió bien, pero con otras palabras. · ¿La IA solo busca palabras clave? No. · La clave decía una cosa, el alumno escribió otra.
+
+## 2026-12-05 10:00 · post · `s2-05dic-post`
+
+<img src="https://raw.githubusercontent.com/LucianoVelazco/eddy-instagram/piezas/20261125-1807/docs/media/s2-05dic-post/post.jpg" width="180">
+
+**Texto de la publicación:**
+
+```text
+Si tú lo entiendes sin esfuerzo, la IA también 💡
+
+Tres consejos para que Eddy IA corrija mejor:
+1. Una clave de respuesta clara y ordenada.
+2. Espacio para cada respuesta en el examen.
+3. Fotos o escaneos nítidos, con buena luz.
+
+Guarda este post para tu próxima evaluación.
+
+#EddyIA #docentes #tipsdocentes #evaluación
 ```
